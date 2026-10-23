@@ -1,0 +1,83 @@
+{
+  "project_name": "WattWise \u2014 Household Energy Consumption Predictor",
+  "target": "Energy_Consumption_kW",
+  "dataset_rows": 10000,
+  "train_rows": 8000,
+  "test_rows": 2000,
+  "test_period_start": "2010-02-05 07:12:00",
+  "selected_model": "Lasso Regression",
+  "selected_best_params": {
+    "model__alpha": 0.001
+  },
+  "selected_metrics": {
+    "mae": 0.023347465699427694,
+    "rmse": 0.034894163445704625,
+    "r2": 0.9984247761322743,
+    "cv_rmse": 0.039236650144779624
+  },
+  "model_comparison": [
+    {
+      "model": "Lasso Regression",
+      "cv_rmse": 0.039236650144779624,
+      "mae": 0.023347465699427694,
+      "rmse": 0.034894163445704625,
+      "r2": 0.9984247761322743,
+      "best_params": {
+        "model__alpha": 0.001
+      }
+    },
+    {
+      "model": "Ridge Regression",
+      "cv_rmse": 0.039460733707662655,
+      "mae": 0.023205058693741197,
+      "rmse": 0.03467284682756479,
+      "r2": 0.9984446945146963,
+      "best_params": {
+        "model__alpha": 0.1
+      }
+    },
+    {
+      "model": "Random Forest",
+      "cv_rmse": 0.05179109272997048,
+      "mae": 0.022809392396225554,
+      "rmse": 0.03616822388360406,
+      "r2": 0.9983076465686536,
+      "best_params": {
+        "model__n_estimators": 260,
+        "model__min_samples_leaf": 2,
+        "model__max_features": 1.0,
+        "model__max_depth": null
+      }
+    },
+    {
+      "model": "Decision Tree",
+      "cv_rmse": 0.0581092436261493,
+      "mae": 0.031723444712166204,
+      "rmse": 0.046818285329223955,
+      "r2": 0.9971642515083489,
+      "best_params": {
+        "model__min_samples_leaf": 2,
+        "model__max_depth": 6
+      }
+    }
+  ],
+  "features": [
+    "Global_reactive_power",
+    "Voltage",
+    "Global_intensity",
+    "Sub_metering_1",
+    "Sub_metering_2",
+    "Sub_metering_3",
+    "Hour",
+    "Year",
+    "Month",
+    "DayOfYear",
+    "IsWeekend",
+    "HourSin",
+    "HourCos",
+    "DaySin",
+    "DayCos",
+    "DayOfWeek"
+  ],
+  "missing_values_dropped": 0
+}
