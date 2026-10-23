@@ -37,7 +37,7 @@ html, body, [class*="css"] { font-family:'DM Sans',sans-serif; }
 .stApp { background:radial-gradient(ellipse at 84% 0%,rgba(92,206,175,.12),transparent 27%),radial-gradient(ellipse at 4% 34%,rgba(131,164,235,.08),transparent 29%),linear-gradient(145deg,#f7faf9 0%,#f1f7f5 55%,#f8fafb 100%); color:var(--ink); }
 [data-testid="stSidebar"] { background:linear-gradient(180deg,#ffffff,#f4f8f7); border-right:1px solid var(--line); }
 [data-testid="stSidebar"] * { color:#24414b; }
-.block-container { max-width:1510px; padding-top:1.25rem; padding-bottom:3rem; }
+.block-container { max-width:1510px; padding-top:4.25rem; padding-bottom:3rem; }
 .brandbar { display:flex; align-items:center; justify-content:space-between; margin:0 0 18px; }
 .brand { display:flex; align-items:center; gap:11px; font:800 20px Manrope,sans-serif; letter-spacing:-.04em; color:#17333e; }
 .brand-icon { width:34px; height:34px; display:grid; place-items:center; color:#ffffff; font-size:19px; border-radius:11px; background:linear-gradient(135deg,#20ad8d,#63a9e9); box-shadow:0 8px 22px rgba(30,153,123,.18); }
@@ -73,7 +73,7 @@ div[data-testid="stSegmentedControl"] button[aria-pressed="true"] { box-shadow:0
 div[data-testid="stDataFrame"] { border:1px solid var(--line); border-radius:12px; overflow:hidden; }
 div[data-testid="stMetric"] { background:rgba(255,255,255,.82); padding:13px 15px; border:1px solid var(--line); border-radius:13px; }
 div[data-testid="stExpander"] { border-color:var(--line); border-radius:12px; background:rgba(255,255,255,.7); }
-@media(max-width:760px) { .block-container{padding-top:.7rem}.hero{padding:21px 20px}.page-number{display:none}.metric-card{height:108px;padding:13px}.metric-value{font-size:18px}.brand-note{font-size:8px} }
+@media(max-width:760px) { .block-container{padding-top:3.5rem}.hero{padding:21px 20px}.page-number{display:none}.metric-card{height:108px;padding:13px}.metric-value{font-size:18px}.brand-note{font-size:8px} }
 </style>
 """, unsafe_allow_html=True)
 
